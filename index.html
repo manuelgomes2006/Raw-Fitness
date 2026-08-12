@@ -26,7 +26,7 @@
   <link rel="icon" type="image/jpeg" href="logo.jpg">
 
   <!-- Main Design System Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=18.0">
+  <link rel="stylesheet" href="styles.css?v=19.0">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -105,7 +105,7 @@
     <div>
       <div class="mobile-nav-header">
         <div class="logo"><img src="logo.jpg" alt="RFG Gym Logo" class="logo-img"> RAW <span>FITNESS</span></div>
-        <button id="close-nav" class="close-nav"><i class="bi bi-x-lg"></i></button>
+        <button id="close-nav" class="close-nav" aria-label="Close Navigation"><i class="bi bi-x-lg"></i></button>
       </div>
       <ul class="mobile-nav-links">
         <li><a href="#about">About Us</a></li>
@@ -114,11 +114,11 @@
         <li><a href="#facilities">Facilities & Sauna</a></li>
         <li><a href="#pricing">Membership Plans</a></li>
         <li><a href="#testimonials">Real Member Stories</a></li>
-        <li><a href="#contact">Location & Hours</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
-    <div style="display:flex; flex-direction:column; gap:12px; margin-top:30px;">
-      <button onclick="openBookingModal('Mobile Drawer')" class="btn btn-white">Book Free Trial</button>
+    <div class="mobile-drawer-cta">
+      <button onclick="closeMobileDrawer(); openBookingModal('Mobile Drawer Pass')" class="btn btn-white"><i class="bi bi-ticket-perforated-fill"></i> Book Free Trial</button>
       <a href="tel:+917278976671" class="btn btn-outline-light"><i class="bi bi-telephone-fill"></i> Call +91 72789 76671</a>
     </div>
   </div>
