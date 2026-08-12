@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Raw Fitness Gym | Best Gym in Dum Dum, Kolkata | 4.9★ Rated</title>
+  <meta name="description" content="Raw Fitness is Dum Dum Kolkata's premier multi-floor gym featuring imported equipment, max AC carpeted floors, CrossFit, Yoga, Dance Fitness, HIIT, Sauna & expert trainers. Book your Free Trial today!">
+  <meta name="keywords" content="gym in Dum Dum Kolkata, CrossFit Kolkata, yoga classes Dum Dum, Raw Fitness Rajbari, best gym Kolkata, dance fitness Dum Dum, personal trainer Kolkata">
+  <meta name="author" content="Raw Fitness Gym">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Raw Fitness Gym | Train Raw. Live Strong. | Dum Dum, Kolkata">
+  <meta property="og:description" content="4.9★ Rated Gym with 482+ reviews in Dum Dum. Multi-floor facility, imported machines, max AC carpeted atmosphere, Sauna, Spa & 15+ fitness programs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rawfitnesskolkata.com">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Main Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=9.0">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Raw Fitness",
+    "image": "https://rawfitnesskolkata.com/logo.png",
+    "telePhone": "+917278976671",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "551/A, Kumarpara, Rajbari",
+      "addressLocality": "Dum Dum, Kolkata",
+      "addressRegion": "West Bengal",
+      "postalCode": "700028",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 22.6417401,
+      "longitude": 88.4213098
+    },
+    "url": "https://rawfitnesskolkata.com",
+    "priceRange": "₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "482"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "06:00",
+      "closes": "23:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <img src="logo.jpg" alt="RFG Gym - Raw Fitness Logo" class="logo-img">
+        RAW <span>FITNESS</span>
+      </a>
+
+      <nav class="header-nav">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#trainers" class="nav-link">Trainers</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#pricing" class="nav-link">Memberships</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button onclick="openBookingModal('Header Pass')" class="btn btn-white btn-sm">Book Trial</button>
+
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <div id="mobile-drawer" class="mobile-nav-drawer">
+    <div>
+      <div class="mobile-nav-header">
+        <div class="logo"><img src="logo.jpg" alt="RFG Gym Logo" class="logo-img"> RAW <span>FITNESS</span></div>
+        <button id="close-nav" class="close-nav"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#trainers">Expert Trainers</a></li>
+        <li><a href="#services">15 Classes & Services</a></li>
+        <li><a href="#facilities">Facilities & Sauna</a></li>
+        <li><a href="#pricing">Membership Plans</a></li>
+        <li><a href="#testimonials">Real Member Stories</a></li>
+        <li><a href="#contact">Location & Hours</a></li>
+      </ul>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; margin-top:30px;">
+      <button onclick="openBookingModal('Mobile Drawer')" class="btn btn-white">Book Free Trial</button>
+      <a href="tel:+917278976671" class="btn btn-outline-light"><i class="bi bi-telephone-fill"></i> Call +91 72789 76671</a>
+    </div>
+  </div>
+
+  <!-- 1. MAIN HERO SECTION (Dark Onyx Theme) -->
+  <section id="hero" class="hero section-dark">
+    <div class="container">
+      <div class="hero-main-layout">
+        <!-- Left Side Title & Badges -->
+        <div>
+          <div class="hero-tagline-small">ACHIEVE YOUR FITNESS GOAL</div>
+          <h1 class="hero-huge-title">UNLEASH<br>OUR POWER</h1>
+
+          <div style="display:flex; gap:12px; margin-bottom:28px; flex-wrap:wrap;">
+            <div id="live-open-status" class="live-status-badge open">
+              <span class="pulse-dot green"></span> Checking Status...
+            </div>
+            <div class="rating-badge">
+              <span class="stars">★★★★★</span>
+              <span>4.9★ (482 Google Reviews)</span>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <button onclick="openBookingModal('Hero Pass')" class="btn btn-white">
+              <i class="bi bi-ticket-perforated-fill"></i> Book Free Trial
+            </button>
+            <a href="tel:+917278976671" class="btn btn-outline-light">
+              <i class="bi bi-telephone-fill"></i> Call Now
+            </a>
+            <a href="https://maps.app.goo.gl/GLMNwoy7d3j9Pxmo8" target="_blank" rel="noopener" class="btn btn-outline-light">
+              <i class="bi bi-geo-alt-fill"></i> Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side Asymmetrical Photo Grid -->
+        <div class="hero-asymmetrical-grid">
+          <div class="hero-left-column-stacked">
+            <div class="img-placeholder hero-card-small">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              <p>Gym Owner 1</p>
+              <span>[ Add Owner Photo 1 ]</span>
+            </div>
+            <div class="img-placeholder hero-card-small">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              <p>Gym Owner 2</p>
+              <span>[ Add Owner Photo 2 ]</span>
+            </div>
+          </div>
+
+          <!-- Continuous Auto-Playing Hero Slideshow (Photo 3) -->
+          <div class="hero-card-tall hero-slider-card" id="hero-slideshow">
+            <div class="hero-slide active">
+              <img src="hero-3a.jpg" alt="Raw Fitness Gym - Cardio Treadmills Arena" class="hero-slide-img">
+            </div>
+
+            <div class="hero-slide">
+              <img src="hero-3b.jpg" alt="Raw Fitness Gym - CrossFit Rig & Boxing Zone" class="hero-slide-img">
+            </div>
+
+            <div class="hero-slide">
+              <img src="hero-3c.jpg" alt="Raw Fitness Gym - Functional Turf & Gymnastic Rings" class="hero-slide-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Info Block -->
+      <div class="hero-bottom-info-block">
+        <div>
+          <h3>YOUR JOURNEY TO FITNESS STARTS HERE</h3>
+        </div>
+        <div>
+          <p>
+            Fitness is more than just a workout — it's a lifestyle. Our gym is built to help you push limits, build strength, and find balance in your fitness journey. With top-tier imported equipment, expert trainers, max AC carpeted floors, and a supportive community, we provide everything you need to reach your goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT US SECTION (Light Clean White Theme) -->
+  <section id="about" class="about section-light">
+    <div class="container about-grid">
+      <div class="img-placeholder" style="height:400px; background:#141419; color:#a1a1aa; border-color:rgba(255,255,255,0.12);">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        <p style="color:#fff;">Multi-Floor Raw Fitness Facility</p>
+        <span>[ Add Multi-Floor Photo ]</span>
+      </div>
+
+      <div>
+        <span class="section-tag">WELCOME TO RAW FITNESS</span>
+        <h2 class="section-title">PREMIER GYM IN DUM DUM, KOLKATA</h2>
+        <p style="color:#52525b; font-size:1.05rem; margin-bottom:20px;">
+          Located conveniently at Rajbari, Dum Dum, <strong>Raw Fitness</strong> spans multiple floors with fully imported cardio and strength equipment, carpeted flooring, max air-conditioning, and clean eco-friendly hygiene standards.
+        </p>
+
+        <div class="about-highlights-list">
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="bi bi-layers-fill"></i></div>
+            <h4>Multi-Floor Facility</h4>
+            <p>Spacious floors for Cardio, CrossFit, Strength & Wellness.</p>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h4>Imported Machinery</h4>
+            <p>State-of-the-art biomechanical resistance machinery.</p>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="bi bi-snow"></i></div>
+            <h4>Max AC Carpeted</h4>
+            <p>Carpeted floors with heavy climate control for extra energy.</p>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="bi bi-wallet2"></i></div>
+            <h4>Budget Friendly</h4>
+            <p>Affordable pricing packages suited for every lifestyle.</p>
+          </div>
+        </div>
+
+        <button onclick="openBookingModal('About Us Free Trial')" class="btn btn-secondary">Join Raw Fitness Today</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TRAINERS SECTION (Dark Onyx Theme) -->
+  <section id="trainers" class="trainers section-dark">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:50px;">
+        <span class="section-tag">CERTIFIED EXPERTS</span>
+        <h2 class="section-title">KNOWLEDGEABLE & SUPPORTIVE TRAINERS</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Our certified coaches craft personalized workouts for all fitness levels.</p>
+      </div>
+
+      <div id="trainers-grid-container" class="trainers-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINER PROFILE MODAL -->
+  <div id="trainer-profile-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button onclick="closeTrainerModal()" class="modal-close"><i class="bi bi-x-lg"></i></button>
+      <div id="modal-trainer-body">
+        <!-- Modal content loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 15 SERVICES & CLASSES SECTION (Soft Off-White Theme) -->
+  <section id="services" class="services section-offwhite">
+    <div class="container">
+      <div class="services-header-row">
+        <div>
+          <span class="section-tag">ALL-INCLUSIVE PROGRAMS</span>
+          <h2 class="section-title">15 SPECIALIZED SERVICES & CLASSES</h2>
+          <p class="section-subtitle" style="margin-bottom:0;">
+            From high-intensity CrossFit and kickboxing to soothing yoga, sauna recovery, and personalized diet consulting.
+          </p>
+        </div>
+      </div>
+
+      <div class="services-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Services (15)</button>
+        <button class="filter-btn" data-filter="strength">Strength & CrossFit</button>
+        <button class="filter-btn" data-filter="cardio">Cardio & HIIT</button>
+        <button class="filter-btn" data-filter="dance">Dance & Aerobics</button>
+        <button class="filter-btn" data-filter="combat">Kickboxing</button>
+        <button class="filter-btn" data-filter="wellness">Yoga & Nutrition</button>
+        <button class="filter-btn" data-filter="recovery">Sauna & Spa</button>
+        <button class="filter-btn" data-filter="sports">Youth & Adult Sports</button>
+      </div>
+
+      <div id="services-grid-container" class="services-grid">
+        <!-- Rendered dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE DETAIL MODAL -->
+  <div id="service-detail-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button onclick="closeServiceModal()" class="modal-close"><i class="bi bi-x-lg"></i></button>
+      <div id="modal-service-body">
+        <!-- Modal content loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. FACILITIES SHOWCASE SECTION (Dark Onyx Theme) -->
+  <section id="facilities" class="facilities section-dark">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:40px;">
+        <span class="section-tag">WORLD-CLASS INFRASTRUCTURE</span>
+        <h2 class="section-title">EXPLORE OUR FACILITIES</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Designed for performance, hygiene, and total body recovery.</p>
+      </div>
+
+      <div class="facilities-tabs">
+        <button class="facility-tab active" data-target="panel-cardio">Cardio Zone</button>
+        <button class="facility-tab" data-target="panel-weights">Free Weights & Machines</button>
+        <button class="facility-tab" data-target="panel-sauna">Sauna & Recovery</button>
+        <button class="facility-tab" data-target="panel-spa">Spa & Wellness</button>
+        <button class="facility-tab" data-target="panel-ac">Max AC Lounge</button>
+      </div>
+
+      <!-- Panel 1: Cardio Zone -->
+      <div id="panel-cardio" class="facility-panel active">
+        <div class="facility-panel-info">
+          <h3>HIGH-TECH CARDIO ARENA</h3>
+          <p>Equipped with imported treadmills, elliptical cross-trainers, stationary spin bikes, and stair climbers with personal monitoring screens.</p>
+          <ul class="facility-features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Imported Treadmills with Shock Absorption</li>
+            <li><i class="bi bi-check-circle-fill"></i> Interactive Heart Rate & Calorie Trackers</li>
+            <li><i class="bi bi-check-circle-fill"></i> Dedicated Spin Bike Studio</li>
+          </ul>
+          <button onclick="openBookingModal('Cardio Zone Trial')" class="btn btn-white">Try Cardio Zone</button>
+        </div>
+        <div class="img-placeholder" style="height:340px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <p>Cardio Arena Frame</p>
+          <span>[ Add Cardio Photo ]</span>
+        </div>
+      </div>
+
+      <!-- Panel 2: Free Weights -->
+      <div id="panel-weights" class="facility-panel">
+        <div class="facility-panel-info">
+          <h3>HEAVY WEIGHTS & RESISTANCE</h3>
+          <p>Multiple dumbbell racks up to heavy weights, squat cages, smith machines, cable crossovers, and plate-loaded leg presses.</p>
+          <ul class="facility-features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Heavy Duty Olympic Barbell Platforms</li>
+            <li><i class="bi bi-check-circle-fill"></i> Biomechanically Tuned Cable Towers</li>
+            <li><i class="bi bi-check-circle-fill"></i> Carpeted Flooring for Grip & Safety</li>
+          </ul>
+          <button onclick="openBookingModal('Weights Trial')" class="btn btn-white">Start Weight Training</button>
+        </div>
+        <div class="img-placeholder" style="height:340px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          <p>Free Weights Zone Frame</p>
+          <span>[ Add Free Weights Photo ]</span>
+        </div>
+      </div>
+
+      <!-- Panel 3: Sauna -->
+      <div id="panel-sauna" class="facility-panel">
+        <div class="facility-panel-info">
+          <h3>DETOX & STEAM SAUNA</h3>
+          <p>Relieve muscle soreness, speed up recovery, flush out toxins, and relax after heavy training sessions in our premium wood sauna room.</p>
+          <ul class="facility-features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Temperature Controlled Sauna Bath</li>
+            <li><i class="bi bi-check-circle-fill"></i> Promotes Circulation & Muscle Healing</li>
+            <li><i class="bi bi-check-circle-fill"></i> Hygienic Shower & Locker Facilities</li>
+          </ul>
+          <button onclick="openBookingModal('Sauna Access')" class="btn btn-white">Experience Sauna</button>
+        </div>
+        <div class="img-placeholder" style="height:340px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
+          <p>Sauna Bath Room Frame</p>
+          <span>[ Add Sauna Photo ]</span>
+        </div>
+      </div>
+
+      <!-- Panel 4: Spa -->
+      <div id="panel-spa" class="facility-panel">
+        <div class="facility-panel-info">
+          <h3>RECOVERY SPA SERVICES</h3>
+          <p>Targeted deep-tissue sports therapy and recovery sessions performed by qualified physical wellness specialists.</p>
+          <ul class="facility-features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Muscle Tension Therapy</li>
+            <li><i class="bi bi-check-circle-fill"></i> Post-Workout Recovery Routines</li>
+          </ul>
+          <button onclick="openBookingModal('Spa Inquiry')" class="btn btn-outline-light">Inquire Spa Services</button>
+        </div>
+        <div class="img-placeholder" style="height:340px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          <p>Spa & Therapy Room</p>
+          <span>[ Add Spa Photo ]</span>
+        </div>
+      </div>
+
+      <!-- Panel 5: Max AC Lounge -->
+      <div id="panel-ac" class="facility-panel">
+        <div class="facility-panel-info">
+          <h3>MAX AC & CLEAN ENVIRONMENT</h3>
+          <p>Fully carpeted floors throughout the facility coupled with heavy-duty air circulation systems ensuring maximum oxygen flow and zero humidity discomfort while lifting.</p>
+          <ul class="facility-features-list">
+            <li><i class="bi bi-check-circle-fill"></i> Continuous Air Purifier & Max AC Units</li>
+            <li><i class="bi bi-check-circle-fill"></i> Eco-Friendly Sanitization Standards</li>
+          </ul>
+          <button onclick="openBookingModal('Facility Tour')" class="btn btn-white">Book Facility Tour</button>
+        </div>
+        <div class="img-placeholder" style="height:340px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          <p>Carpeted AC Lounge Frame</p>
+          <span>[ Add AC Lounge Photo ]</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. MEMBERSHIPS SECTION (Pitch Black Theme with White Cards) -->
+  <section id="pricing" class="pricing section-dark-surface">
+    <div class="container">
+      <h2 class="pricing-title-heading">MEMBERSHIPS PLANS THAT SUITS YOUR LIFESTYLE</h2>
+
+      <div class="pricing-grid-ref">
+        <!-- Card 1: Annual VIP (PREMIUM) -->
+        <div class="pricing-card-ref">
+          <div>
+            <div class="pricing-card-header-row">
+              <h3 class="pricing-plan-title">PREMIUM</h3>
+              <div class="pricing-plan-price-tag">
+                <div class="amount">₹11,999</div>
+                <span class="period">/year</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features-list-ref">
+              <li>Professional Trainers</li>
+              <li>All 15 Facilities & Classes</li>
+              <li>Free Sauna & Spa Discounts</li>
+              <li>Diet Programs & Guidance</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card-footer-row">
+            <button onclick="openBookingModal('Annual VIP Plan')" class="btn btn-secondary btn-sm">Book Now</button>
+          </div>
+        </div>
+
+        <!-- Card 2: Quarterly Pass (ADVANCED) -->
+        <div class="pricing-card-ref">
+          <div>
+            <div class="pricing-card-header-row">
+              <h3 class="pricing-plan-title">ADVANCED</h3>
+              <div class="pricing-plan-price-tag">
+                <div class="amount">₹3,799</div>
+                <span class="period">/3 months</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features-list-ref">
+              <li>Professional Trainers</li>
+              <li>All Facilities</li>
+              <li>Free Sauna Session</li>
+              <li>Diet Programs</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card-footer-row">
+            <button onclick="openBookingModal('Quarterly Plan')" class="btn btn-secondary btn-sm">Book Now</button>
+          </div>
+        </div>
+
+        <!-- Card 3: Monthly Pass (BASIC) -->
+        <div class="pricing-card-ref">
+          <div>
+            <div class="pricing-card-header-row">
+              <h3 class="pricing-plan-title">BASIC</h3>
+              <div class="pricing-plan-price-tag">
+                <div class="amount">₹1,499</div>
+                <span class="period">/month</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features-list-ref">
+              <li>Professional Trainers</li>
+              <li>Multi-Floor Access</li>
+              <li>Carpeted Max AC</li>
+              <li>General Guidance</li>
+            </ul>
+          </div>
+
+          <div class="pricing-card-footer-row">
+            <button onclick="openBookingModal('Monthly Plan')" class="btn btn-secondary btn-sm">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TESTIMONIALS SECTION (Light Clean White Theme) -->
+  <section id="testimonials" class="testimonials section-light">
+    <div class="container">
+      <div class="testimonials-ref-grid">
+        <!-- Left Side Display Text -->
+        <div>
+          <h2 class="testimonials-left-heading">REAL<br>STORIES.<br>REAL<br>RESULTS.</h2>
+          <p class="testimonials-left-text">
+            Our community speaks for itself. Discover how members transformed their lives, pushed post limits, and found inner strength at Raw Fitness Dum Dum.
+          </p>
+        </div>
+
+        <!-- Right Side Floating Dark Card -->
+        <div class="testimonials-right-frame">
+          <div class="img-placeholder" style="height:100%; background:#141419; border-color:rgba(255,255,255,0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <p style="color:#fff;">Battle Ropes & Member Action Frame</p>
+            <span>[ Add Member Action Photo ]</span>
+          </div>
+
+          <div class="testimonial-floating-white-card">
+            <div id="testimonials-slides">
+              <!-- Rendered via JS -->
+            </div>
+
+            <div class="testimonial-nav-arrows">
+              <button id="prev-test-btn" class="arrow-btn" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+              <button id="next-test-btn" class="arrow-btn" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. POPULAR TIMES & BUSY HOURS (Dark Onyx Theme) -->
+  <section id="popular-times" class="live-status-section section-dark">
+    <div class="container">
+      <div class="live-widget-card">
+        <div>
+          <span class="section-tag">REAL-TIME GYM STATUS</span>
+          <h3 style="font-size:2.2rem; margin-bottom:12px;">POPULAR TIMES & BUSY HOURS</h3>
+          <p style="color:#a1a1aa; margin-bottom:20px;">
+            Typical visit duration is <strong>1 – 2 hours</strong>.
+          </p>
+          <div class="live-status-badge open">
+            <span class="pulse-dot green"></span> Usually Not Too Busy Now
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size:0.9rem; margin-bottom:12px; color:#a1a1aa;">Daily Hourly Footfall Pattern:</h4>
+          <div id="popular-times-bars" class="occupancy-bars">
+            <!-- JS bars -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. VISUAL GALLERY (Soft Off-White Theme) -->
+  <section id="gallery" class="gallery section-offwhite">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:40px;">
+        <span class="section-tag">VISUAL GALLERY</span>
+        <h2 class="section-title">INSIDE RAW FITNESS</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="img-placeholder gallery-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <p>Cardio Floor Action</p>
+        </div>
+        <div class="img-placeholder gallery-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <p>CrossFit Rig Ropes</p>
+        </div>
+        <div class="img-placeholder gallery-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <p>Free Weights Rack</p>
+        </div>
+        <div class="img-placeholder gallery-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <p>Dance & Yoga Studio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. BOTTOM BANNER ("JOIN US TODAY") (Pitch Black Theme) -->
+  <section class="join-today-banner">
+    <div class="container">
+      <h2 class="join-today-title">JOIN US TODAY</h2>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <button onclick="openBookingModal('Join Today Banner')" class="btn btn-white"><i class="bi bi-ticket-perforated-fill"></i> Get Free Trial Pass</button>
+        <a href="tel:+917278976671" class="btn btn-outline-light"><i class="bi bi-telephone-fill"></i> Call +91 72789 76671</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. LOCATION & CONTACT SECTION (Dark Surface Theme) -->
+  <section id="contact" class="contact section-dark-surface">
+    <div class="container contact-grid">
+      <div>
+        <span class="section-tag">LOCATION & CONTACT</span>
+        <h2 class="section-title">VISIT RAW FITNESS TODAY</h2>
+        <p style="color:#a1a1aa; margin-bottom:30px;">
+          Conveniently located near Rajbari, Dum Dum. Drop in for a facility tour or contact our team for membership details.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>551/A, Kumarpara, Rajbari, Dum Dum, Kolkata, West Bengal 700028</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h4>Phone (Click to Call)</h4>
+              <p><a href="tel:+917278976671" style="font-weight:700; color:var(--text-light); text-decoration:underline;">+91 72789 76671</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <h4>Hours</h4>
+              <p>Open Daily (Mon – Sun): <strong>6:00 AM – 11:00 PM</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:30px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://maps.app.goo.gl/GLMNwoy7d3j9Pxmo8" target="_blank" rel="noopener" class="btn btn-white">
+            <i class="bi bi-cursor-fill"></i> Open in Google Maps
+          </a>
+          <a href="https://www.instagram.com/teamrfg21?igsh=emd0aGZna3U1OG15" target="_blank" rel="noopener" class="btn btn-outline-light">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a href="https://www.facebook.com/RawFitnessGymKolkata/" target="_blank" rel="noopener" class="btn btn-outline-light">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <button onclick="openBookingModal('Contact Direct')" class="btn btn-outline-light">Request Call Back</button>
+        </div>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="map-container">
+        <iframe 
+          class="map-iframe"
+          src="https://maps.google.com/maps?q=Raw+Fitness%2C+551%2FA%2C+Kumarpara%2C+Rajbari%2C+Dum+Dum%2C+Kolkata%2C+West+Bengal+700028&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Raw Fitness Gym Location Map Dum Dum Kolkata">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING / INQUIRY MODAL -->
+  <div id="booking-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button onclick="closeBookingModal()" class="modal-close" aria-label="Close Modal"><i class="bi bi-x-lg"></i></button>
+
+      <div class="modal-header-icon">
+        <i class="bi bi-whatsapp"></i>
+      </div>
+
+      <h2 class="modal-title">INQUIRE MEMBERSHIP & TOUR</h2>
+      <p class="modal-subtitle">Send us a message or request a call back. Enter your details below to connect on WhatsApp instantly.</p>
+
+      <form id="booking-form" class="modal-form">
+        <input type="hidden" id="booking-service-name" value="General Inquiry">
+        
+        <div class="input-group">
+          <label for="book-name"><i class="bi bi-person-fill"></i> Your Full Name</label>
+          <input type="text" id="book-name" class="input-field" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="input-group">
+          <label for="book-phone"><i class="bi bi-telephone-fill"></i> Phone Number (WhatsApp / Call)</label>
+          <input type="tel" id="book-phone" class="input-field" placeholder="e.g. 9830012345" required>
+        </div>
+
+        <div class="input-group">
+          <label for="book-pref"><i class="bi bi-clock-fill"></i> Preferred Time Slot</label>
+          <select id="book-pref" class="input-field">
+            <option value="morning">Morning (6:00 AM – 11:00 AM)</option>
+            <option value="afternoon">Afternoon (11:00 AM – 4:00 PM)</option>
+            <option value="evening">Evening (4:00 PM – 11:00 PM)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-whatsapp-submit">
+          <i class="bi bi-whatsapp"></i> Connect on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING MOBILE ACTION BAR -->
+  <div class="mobile-action-bar">
+    <a href="tel:+917278976671" class="btn btn-outline-light"><i class="bi bi-telephone-fill"></i> Call Gym</a>
+    <button onclick="openBookingModal('Mobile Action Bar')" class="btn btn-white"><i class="bi bi-ticket-perforated-fill"></i> Free Pass</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#hero" class="logo" style="margin-bottom:18px; display:inline-flex; color:#fff;">
+            <img src="logo.jpg" alt="RFG Gym - Raw Fitness Logo" class="logo-img">
+            RAW <span style="color:#a1a1aa;">FITNESS</span>
+          </a>
+          <p style="color:#a1a1aa; font-size:0.925rem; margin-bottom:20px; line-height:1.6;">
+            Dum Dum Kolkata’s premier fitness center. Multi-floor setup, imported machinery, max AC carpeted flooring, eco-friendly hygiene, and budget-friendly pricing.
+          </p>
+          <div class="rating-badge" style="margin-bottom:16px;">
+            <span class="stars">★★★★★</span>
+            <span>4.9 Google Rating (482 Reviews)</span>
+          </div>
+
+          <div style="display:flex; gap:10px; align-items:center;">
+            <a id="btn-social-instagram" href="https://www.instagram.com/teamrfg21?igsh=emd0aGZna3U1OG15" target="_blank" rel="noopener" class="social-icon-btn instagram" title="Follow on Instagram"><i class="bi bi-instagram"></i></a>
+            <a id="btn-social-facebook" href="https://www.facebook.com/RawFitnessGymKolkata/" target="_blank" rel="noopener" class="social-icon-btn facebook" title="Follow on Facebook"><i class="bi bi-facebook"></i></a>
+            <a id="btn-social-whatsapp" href="https://wa.me/917278976671" target="_blank" rel="noopener" class="social-icon-btn whatsapp" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a id="btn-social-maps" href="https://maps.app.goo.gl/GLMNwoy7d3j9Pxmo8" target="_blank" rel="noopener" class="social-icon-btn maps" title="View on Google Maps"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Facility</a></li>
+            <li><a href="#trainers">Certified Trainers</a></li>
+            <li><a href="#services">15 Services & Classes</a></li>
+            <li><a href="#facilities">Sauna & Spa</a></li>
+            <li><a href="#pricing">Membership Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Classes</h4>
+          <ul class="footer-links">
+            <li><a href="#services">CrossFit & HIIT</a></li>
+            <li><a href="#services">Dance Fitness & Aerobics</a></li>
+            <li><a href="#services">Yoga & Flexibility</a></li>
+            <li><a href="#services">Kickboxing</a></li>
+            <li><a href="#services">Personal Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <p style="color:#a1a1aa; font-size:0.9rem; margin-bottom:10px;">
+            551/A, Kumarpara, Rajbari, Dum Dum, Kolkata, WB 700028
+          </p>
+          <p style="color:#fff; font-weight:700; margin-bottom:16px;">
+            Phone: <a href="tel:+917278976671" style="text-decoration:underline;">+91 72789 76671</a>
+          </p>
+          <p style="color:#71717a; font-size:0.85rem;">
+            Hours: Open Daily 6 AM – 11 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Raw Fitness Gym. All rights reserved. Designed for Dum Dum, Kolkata.</p>
+        <p style="color:#71717a;">Train Raw. Live Strong.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic JS -->
+  <script src="app.js?v=2.0"></script>
+</body>
+</html>
