@@ -1468,7 +1468,6 @@ select.input-field option {
   .nav-toggle { display: flex; }
   .mobile-action-bar { display: flex; }
   body { padding-bottom: 60px; }
-  .hero-asymmetrical-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
@@ -1494,6 +1493,29 @@ select.input-field option {
   .logo-img {
     width: 36px !important;
     height: 36px !important;
+  }
+
+  /* Mobile Asymmetrical Hero Photo Grid (Matching PC Layout) */
+  .hero-asymmetrical-grid {
+    grid-template-columns: 0.85fr 1.15fr !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  .hero-left-column-stacked {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .hero-card-small {
+    height: 125px !important;
+    border-radius: 16px !important;
+  }
+
+  .hero-card-tall, .hero-slider-card {
+    height: 260px !important;
+    border-radius: 16px !important;
   }
 
   .trainers-grid {
