@@ -1661,4 +1661,71 @@ select.input-field option {
     flex: none !important;
     border-radius: 10px !important;
   }
+
+  /* Mobile Modal Fit Fix (Inquire Membership & Tour Modal) */
+  .modal-backdrop {
+    padding: 12px !important;
+    align-items: center !important;
+    overflow-y: auto !important;
+  }
+
+  .modal-box {
+    padding: 26px 18px !important;
+    border-radius: 20px !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .modal-header-icon {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.4rem !important;
+    margin-bottom: 12px !important;
+    border-radius: 12px !important;
+  }
+
+  .modal-title {
+    font-size: 1.45rem !important;
+    margin-bottom: 6px !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .modal-subtitle {
+    font-size: 0.8rem !important;
+    margin-bottom: 18px !important;
+    line-height: 1.4 !important;
+  }
+
+  .modal-close {
+    top: 14px !important;
+    right: 14px !important;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .modal-form {
+    gap: 12px !important;
+  }
+
+  .input-group label {
+    font-size: 0.75rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .input-field {
+    padding: 10px 14px !important;
+    font-size: 0.85rem !important;
+    border-radius: 12px !important;
+  }
+
+  .btn-whatsapp-submit {
+    padding: 12px 16px !important;
+    font-size: 0.85rem !important;
+    border-radius: 12px !important;
+    margin-top: 4px !important;
+  }
 }
