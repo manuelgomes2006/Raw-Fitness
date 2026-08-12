@@ -668,6 +668,15 @@ section {
   margin-bottom: 30px;
 }
 
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .hero-asymmetrical-grid {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -1495,27 +1504,69 @@ select.input-field option {
     height: 36px !important;
   }
 
+  /* Mobile Hero CTA Buttons Compact Uniform Row */
+  .hero-cta-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .hero-cta-group .btn {
+    flex: 1 1 auto !important;
+    padding: 8px 12px !important;
+    font-size: 0.75rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    border-radius: 9999px !important;
+    white-space: nowrap !important;
+  }
+
   /* Mobile Asymmetrical Hero Photo Grid (Matching PC Layout) */
   .hero-asymmetrical-grid {
     grid-template-columns: 0.85fr 1.15fr !important;
-    gap: 10px !important;
+    gap: 8px !important;
     align-items: stretch !important;
   }
 
   .hero-left-column-stacked {
     display: flex !important;
     flex-direction: column !important;
-    gap: 10px !important;
+    gap: 8px !important;
   }
 
   .hero-card-small {
-    height: 125px !important;
+    height: 120px !important;
     border-radius: 16px !important;
+    overflow: hidden !important;
+    position: relative !important;
   }
 
   .hero-card-tall, .hero-slider-card {
-    height: 260px !important;
+    height: 248px !important;
     border-radius: 16px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    background: #141419 !important;
+  }
+
+  .hero-slide {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-slide img, .hero-slide-img, .hero-card-small img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 16px !important;
+    display: block !important;
   }
 
   .trainers-grid {
