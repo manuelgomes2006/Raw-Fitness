@@ -1472,8 +1472,30 @@ select.input-field option {
   .footer-grid { grid-template-columns: 1fr; }
 }
 
-/* Mobile Phone Specific Layout (Sleek 2-Column Grid for Trainers Section) */
+/* Mobile Header Clean Layout Fix */
+@media (max-width: 768px) {
+  .header-actions .btn {
+    display: none !important;
+  }
+}
+
+/* Mobile Phone Specific Layout */
 @media (max-width: 640px) {
+  .site-header {
+    padding: 12px 0 !important;
+  }
+
+  .logo {
+    font-size: 1.35rem !important;
+    gap: 8px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .logo-img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
   .trainers-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
