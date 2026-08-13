@@ -1506,42 +1506,68 @@ select.input-field option {
   .footer-grid { grid-template-columns: 1fr; }
 }
 
-/* Mobile Header Clean Layout Fix */
+/* Mobile Header Clean Layout Fix (Matching Screenshot 1) */
 @media (max-width: 768px) {
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
   .header-actions .btn {
-    display: none !important;
+    display: inline-flex !important;
+    padding: 6px 12px !important;
+    font-size: 0.7rem !important;
+    border-radius: 9999px !important;
+    font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
+    letter-spacing: 0.5px !important;
   }
 }
 
-/* Mobile Phone Specific Layout */
+/* Mobile Phone Specific Layout (Matching Screenshot 1) */
 @media (max-width: 640px) {
   .site-header {
-    padding: 12px 0 !important;
+    padding: 10px 0 !important;
   }
 
   .logo {
-    font-size: 1.35rem !important;
-    gap: 8px !important;
+    font-size: 1.2rem !important;
+    gap: 6px !important;
     letter-spacing: 1px !important;
   }
 
   .logo-img {
-    width: 36px !important;
-    height: 36px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
 
-  /* Mobile Hero CTA Buttons Compact Uniform Row */
+  /* Mobile Hero Headlines */
+  .hero-tagline-small {
+    font-size: 0.72rem !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-huge-title {
+    font-size: 2.8rem !important;
+    line-height: 0.95 !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Mobile Hero CTA Buttons Row */
   .hero-cta-group {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 8px !important;
+    gap: 6px !important;
     margin-bottom: 20px !important;
   }
 
   .hero-cta-group .btn {
     flex: 1 1 auto !important;
-    padding: 8px 12px !important;
-    font-size: 0.75rem !important;
+    padding: 8px 10px !important;
+    font-size: 0.72rem !important;
     text-align: center !important;
     justify-content: center !important;
     border-radius: 9999px !important;
@@ -1550,9 +1576,10 @@ select.input-field option {
 
   /* Mobile Asymmetrical Hero Photo Grid (Matching PC Layout) */
   .hero-asymmetrical-grid {
-    grid-template-columns: 0.85fr 1.15fr !important;
+    grid-template-columns: 0.82fr 1.18fr !important;
     gap: 8px !important;
     align-items: stretch !important;
+    margin-bottom: 24px !important;
   }
 
   .hero-left-column-stacked {
@@ -1574,6 +1601,26 @@ select.input-field option {
     overflow: hidden !important;
     position: relative !important;
     background: #141419 !important;
+  }
+
+  .hero-bottom-info-block {
+    padding: 20px 16px !important;
+    border-radius: 18px !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    margin-top: 24px !important;
+  }
+
+  .hero-bottom-info-block h3 {
+    font-size: 1.25rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-bottom-info-block p {
+    font-size: 0.78rem !important;
+    line-height: 1.45 !important;
+    color: #a1a1aa !important;
   }
 
   .hero-slide {
