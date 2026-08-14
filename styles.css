@@ -887,8 +887,8 @@ section {
 
 .trainers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .trainer-card-profile {
@@ -974,6 +974,26 @@ section {
   font-size: 0.825rem;
   color: var(--text-muted-light);
   font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.trainer-actions-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.trainer-actions-stacked .btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 9999px;
 }
 
 /* 16 Services & Classes (Off-White Section) */
@@ -1663,6 +1683,8 @@ select.input-field option {
   }
 }
 
+/* Mobile Phone Specific Grid & Modal Overrides */
+@media (max-width: 640px) {
   .trainers-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;

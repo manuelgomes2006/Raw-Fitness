@@ -397,9 +397,9 @@ function renderTrainers(data) {
           <div><span style="color:#f59e0b;">★ ${trainer.rating}</span> Member Rating</div>
         </div>
 
-        <div style="display:flex; gap:10px; margin-top:16px;">
-          <button onclick="openTrainerModal('${trainer.id}')" class="btn btn-outline-light btn-sm" style="flex:1;">View Bio</button>
-          <button onclick="openBookingModal('1-on-1 Session with ${trainer.name}')" class="btn btn-white btn-sm" style="flex:1.2;">Book Session</button>
+        <div class="trainer-actions-stacked">
+          <button onclick="openTrainerModal('${trainer.id}')" class="btn btn-outline-light trainer-btn-bio">View Bio</button>
+          <button onclick="openBookingModal('1-on-1 Session with ${trainer.name}')" class="btn btn-white trainer-btn-book">Book Session</button>
         </div>
       </div>
     </div>
