@@ -1504,10 +1504,11 @@ select.input-field option {
   .mobile-action-bar { display: flex; }
   body { padding-bottom: 60px; }
   .footer-grid { grid-template-columns: 1fr; }
-}
 
-/* Mobile Header Clean Layout Fix (Matching Screenshot 1) */
-@media (max-width: 768px) {
+  .site-header {
+    padding: 10px 0 !important;
+  }
+
   .header-actions {
     display: flex !important;
     align-items: center !important;
@@ -1517,40 +1518,33 @@ select.input-field option {
   .header-actions .btn {
     display: inline-flex !important;
     padding: 6px 12px !important;
-    font-size: 0.7rem !important;
+    font-size: 0.72rem !important;
     border-radius: 9999px !important;
     font-weight: 800 !important;
     font-family: var(--font-heading) !important;
     letter-spacing: 0.5px !important;
   }
-}
-
-/* Mobile Phone Specific Layout (Matching Screenshot 1) */
-@media (max-width: 640px) {
-  .site-header {
-    padding: 10px 0 !important;
-  }
 
   .logo {
-    font-size: 1.2rem !important;
+    font-size: 1.25rem !important;
     gap: 6px !important;
     letter-spacing: 1px !important;
   }
 
   .logo-img {
-    width: 32px !important;
-    height: 32px !important;
+    width: 34px !important;
+    height: 34px !important;
   }
 
   /* Mobile Hero Headlines */
   .hero-tagline-small {
-    font-size: 0.72rem !important;
+    font-size: 0.75rem !important;
     letter-spacing: 2px !important;
     margin-bottom: 6px !important;
   }
 
   .hero-huge-title {
-    font-size: 2.8rem !important;
+    font-size: clamp(2.6rem, 8vw, 3.8rem) !important;
     line-height: 0.95 !important;
     letter-spacing: 1.5px !important;
     margin-bottom: 16px !important;
@@ -1560,24 +1554,25 @@ select.input-field option {
   .hero-cta-group {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 6px !important;
-    margin-bottom: 20px !important;
+    gap: 8px !important;
+    margin-bottom: 24px !important;
   }
 
   .hero-cta-group .btn {
     flex: 1 1 auto !important;
-    padding: 8px 10px !important;
-    font-size: 0.72rem !important;
+    padding: 8px 12px !important;
+    font-size: 0.75rem !important;
     text-align: center !important;
     justify-content: center !important;
     border-radius: 9999px !important;
     white-space: nowrap !important;
   }
 
-  /* Mobile Asymmetrical Hero Photo Grid (Matching PC Layout) */
+  /* Mobile Asymmetrical Hero Photo Grid (Matching Screenshot 1) */
   .hero-asymmetrical-grid {
+    display: grid !important;
     grid-template-columns: 0.82fr 1.18fr !important;
-    gap: 8px !important;
+    gap: 10px !important;
     align-items: stretch !important;
     margin-bottom: 24px !important;
   }
@@ -1585,22 +1580,41 @@ select.input-field option {
   .hero-left-column-stacked {
     display: flex !important;
     flex-direction: column !important;
-    gap: 8px !important;
+    gap: 10px !important;
   }
 
   .hero-card-small {
-    height: 120px !important;
+    height: 125px !important;
     border-radius: 16px !important;
     overflow: hidden !important;
     position: relative !important;
   }
 
   .hero-card-tall, .hero-slider-card {
-    height: 248px !important;
+    height: 260px !important;
     border-radius: 16px !important;
     overflow: hidden !important;
     position: relative !important;
     background: #141419 !important;
+  }
+
+  .hero-slide {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-slide img, .hero-slide-img, .hero-card-small img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 16px !important;
+    display: block !important;
   }
 
   .hero-bottom-info-block {
@@ -1622,25 +1636,7 @@ select.input-field option {
     line-height: 1.45 !important;
     color: #a1a1aa !important;
   }
-
-  .hero-slide {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
-  }
-
-  .hero-slide img, .hero-slide-img, .hero-card-small img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    border-radius: 16px !important;
-    display: block !important;
-  }
+}
 
   .trainers-grid {
     grid-template-columns: repeat(2, 1fr) !important;
