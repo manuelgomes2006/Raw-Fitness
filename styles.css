@@ -694,6 +694,13 @@ section {
   margin-bottom: 30px;
 }
 
+.hero-badges-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
 .hero-cta-group {
   display: flex;
   align-items: center;
@@ -1505,6 +1512,17 @@ select.input-field option {
   body { padding-bottom: 60px; }
   .footer-grid { grid-template-columns: 1fr; }
 
+  /* Mobile Hero Container Spacing (Removing Excessive Space) */
+  .hero {
+    min-height: auto !important;
+    padding-top: 72px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hero-main-layout {
+    gap: 14px !important;
+  }
+
   .site-header {
     padding: 10px 0 !important;
   }
@@ -1538,61 +1556,68 @@ select.input-field option {
 
   /* Mobile Hero Headlines */
   .hero-tagline-small {
-    font-size: 0.75rem !important;
+    font-size: 0.7rem !important;
     letter-spacing: 2px !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 4px !important;
   }
 
   .hero-huge-title {
-    font-size: clamp(2.6rem, 8vw, 3.8rem) !important;
+    font-size: clamp(2.4rem, 7.5vw, 3.4rem) !important;
     line-height: 0.95 !important;
-    letter-spacing: 1.5px !important;
-    margin-bottom: 16px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-badges-row {
+    display: flex !important;
+    gap: 6px !important;
+    margin-bottom: 14px !important;
+    flex-wrap: wrap !important;
   }
 
   /* Mobile Hero CTA Buttons Row */
   .hero-cta-group {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 8px !important;
-    margin-bottom: 24px !important;
+    gap: 6px !important;
+    margin-bottom: 16px !important;
   }
 
   .hero-cta-group .btn {
     flex: 1 1 auto !important;
-    padding: 8px 12px !important;
-    font-size: 0.75rem !important;
+    padding: 7px 10px !important;
+    font-size: 0.72rem !important;
     text-align: center !important;
     justify-content: center !important;
     border-radius: 9999px !important;
     white-space: nowrap !important;
   }
 
-  /* Mobile Asymmetrical Hero Photo Grid (Matching Screenshot 1) */
+  /* Mobile Asymmetrical Hero Photo Grid */
   .hero-asymmetrical-grid {
     display: grid !important;
     grid-template-columns: 0.82fr 1.18fr !important;
-    gap: 10px !important;
+    gap: 8px !important;
     align-items: stretch !important;
-    margin-bottom: 24px !important;
+    margin-bottom: 16px !important;
   }
 
   .hero-left-column-stacked {
     display: flex !important;
     flex-direction: column !important;
-    gap: 10px !important;
+    gap: 8px !important;
   }
 
   .hero-card-small {
-    height: 125px !important;
-    border-radius: 16px !important;
+    height: 115px !important;
+    border-radius: 14px !important;
     overflow: hidden !important;
     position: relative !important;
   }
 
   .hero-card-tall, .hero-slider-card {
-    height: 260px !important;
-    border-radius: 16px !important;
+    height: 238px !important;
+    border-radius: 14px !important;
     overflow: hidden !important;
     position: relative !important;
     background: #141419 !important;
@@ -1604,7 +1629,7 @@ select.input-field option {
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    border-radius: 16px !important;
+    border-radius: 14px !important;
     overflow: hidden !important;
   }
 
@@ -1613,27 +1638,27 @@ select.input-field option {
     height: 100% !important;
     object-fit: cover !important;
     object-position: center !important;
-    border-radius: 16px !important;
+    border-radius: 14px !important;
     display: block !important;
   }
 
   .hero-bottom-info-block {
-    padding: 20px 16px !important;
-    border-radius: 18px !important;
+    padding: 16px 14px !important;
+    border-radius: 16px !important;
     grid-template-columns: 1fr !important;
-    gap: 10px !important;
-    margin-top: 24px !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
   }
 
   .hero-bottom-info-block h3 {
-    font-size: 1.25rem !important;
-    letter-spacing: 1px !important;
-    margin-bottom: 6px !important;
+    font-size: 1.15rem !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 4px !important;
   }
 
   .hero-bottom-info-block p {
-    font-size: 0.78rem !important;
-    line-height: 1.45 !important;
+    font-size: 0.76rem !important;
+    line-height: 1.4 !important;
     color: #a1a1aa !important;
   }
 }
