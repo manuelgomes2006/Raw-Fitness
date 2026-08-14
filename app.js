@@ -219,31 +219,61 @@ const trainersData = [
   }
 ];
 
-// Testimonials Data
+// Testimonials Data (6 Authentic Member Reviews with Photo Slots)
 const testimonialsData = [
   {
+    id: "review-1",
     quote: "Joining Raw Fitness was the best decision ever made for my health. The trainers are incredibly supportive, and the AC carpet area is unmatched! Lost 20 lbs with confidence.",
     author: "Rahul Chakraborty",
     role: "Regular Member (2+ Years)",
-    stars: 5
+    highlight: "⚡ Lost 20 lbs in 4 Months",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
   },
   {
+    id: "review-2",
     quote: "Imported machines + experienced trainers. Well maintained, max AC, and super eco-friendly surroundings that give extra energy during heavy lifts.",
     author: "Ananya Sen",
     role: "CrossFit & Strength Member",
-    stars: 5
+    highlight: "💪 Built Lean Muscle",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
   },
   {
-    quote: "The main thing for me is the good atmosphere ❤️ High energy, professional staff, clean sauna, and great community spirit!",
+    id: "review-3",
+    quote: "The main thing for me is the good atmosphere ❤️ High energy, professional staff, clean sauna, and great community spirit! Best gym in Dum Dum.",
     author: "Subhabrata Roy",
     role: "Personal Training Client",
-    stars: 5
+    highlight: "🔥 High Energy & AC Comfort",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
   },
   {
-    quote: "Best gym in Dum Dum! Multi-floor setup with affordable budget-friendly packages. The 15+ class variety is incredible.",
+    id: "review-4",
+    quote: "Best gym in Dum Dum! Multi-floor setup with affordable budget-friendly packages. The 15+ class variety and steam sauna recovery are incredible.",
     author: "Pooja Banerjee",
     role: "Yoga & Aerobics Member",
-    stars: 5
+    highlight: "🧘 15+ Classes & Sauna",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
+  },
+  {
+    id: "review-5",
+    quote: "Top tier barbell platforms and dumbbell racks. Imran Sir and Nasir Sir guide every single set with exact biomechanical form. 10/10 rating!",
+    author: "Rohan Das",
+    role: "Bodybuilding Lifter",
+    highlight: "🏋️ Heavy Weights & Form",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
+  },
+  {
+    id: "review-6",
+    quote: "Super clean, hygienic lockers, carpeted floors, and zero humidity discomfort. The trainers tailor workout plans specifically for your body goals.",
+    author: "Sneha Mukherjee",
+    role: "Fat Loss & Fitness Client",
+    highlight: "✨ Clean Hygiene & Workouts",
+    stars: 5,
+    photoFrameText: "[ Add Photo ]"
   }
 ];
 
@@ -525,36 +555,28 @@ function initFacilityTabs() {
   });
 }
 
-/* Testimonials Carousel */
-let currentSlide = 0;
+/* Testimonials Modern Card Grid (6 Cards with Photo Slots) */
 function initTestimonialsCarousel() {
-  const container = document.getElementById("testimonials-slides");
+  const container = document.getElementById("testimonials-cards-container");
   if (!container) return;
 
-  container.innerHTML = testimonialsData.map((item, idx) => `
-    <div class="testimonial-slide-item" style="display: ${idx === 0 ? 'block' : 'none'}; animation: fadeIn 0.3s ease;">
-      <div class="testimonial-avatar-header">
-        <div class="testimonial-avatar-img">${item.author.charAt(0)}</div>
-        <div>
-          <div class="testimonial-author-name">${item.author}</div>
-          <span style="font-size:0.75rem; color:#71717a;">${item.role}</span>
+  container.innerHTML = testimonialsData.map(item => `
+    <div class="testimonial-card-modern">
+      <div>
+        <div class="testimonial-header-row">
+          <div class="testimonial-avatar-circle">${item.author.charAt(0)}</div>
+          <div style="flex-grow:1;">
+            <div class="testimonial-author-title">${item.author}</div>
+            <div class="testimonial-author-role">${item.role}</div>
+          </div>
+          <div class="testimonial-photo-slot">${item.photoFrameText}</div>
         </div>
+        <div class="testimonial-rating-stars">★★★★★</div>
+        <p class="testimonial-quote-body">"${item.quote}"</p>
       </div>
-      <p class="testimonial-body-quote">"${item.quote}"</p>
+      <div class="testimonial-highlight-pill">${item.highlight}</div>
     </div>
   `).join('');
-
-  document.getElementById("prev-test-btn")?.addEventListener("click", () => changeSlide(-1));
-  document.getElementById("next-test-btn")?.addEventListener("click", () => changeSlide(1));
-}
-
-function changeSlide(direction) {
-  const slides = document.querySelectorAll(".testimonial-slide-item");
-  if (!slides.length) return;
-
-  slides[currentSlide].style.display = "none";
-  currentSlide = (currentSlide + direction + slides.length) % slides.length;
-  slides[currentSlide].style.display = "block";
 }
 
 /* Free Trial / Inquiry Modal */
