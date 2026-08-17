@@ -1626,20 +1626,10 @@ select.input-field option {
     padding: 10px 0 !important;
   }
 
-  .header-actions {
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-  }
-
-  .header-actions .btn {
-    display: inline-flex !important;
-    padding: 6px 12px !important;
-    font-size: 0.72rem !important;
-    border-radius: 9999px !important;
-    font-weight: 800 !important;
-    font-family: var(--font-heading) !important;
-    letter-spacing: 0.5px !important;
+  .header-actions .btn,
+  .header-actions a,
+  .header-actions button:not(.nav-toggle) {
+    display: none !important;
   }
 
   .logo {
