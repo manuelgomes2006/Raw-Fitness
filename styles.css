@@ -1603,32 +1603,21 @@ select.input-field option {
     align-items: center !important;
   }
 
-  .header-actions .btn {
-    display: none !important;
-  }
-
   .btn-call-header {
-    display: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    padding: 6px 14px !important;
+    font-size: 0.75rem !important;
+    border-radius: 9999px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.08) !important;
   }
 
-  /* Mobile Hero Container Spacing (Removing Excessive Space) */
-  .hero {
-    min-height: auto !important;
-    padding-top: 72px !important;
-    padding-bottom: 24px !important;
-  }
-
-  .hero-main-layout {
-    gap: 14px !important;
-  }
-
-  .site-header {
-    padding: 10px 0 !important;
-  }
-
-  .header-actions .btn,
-  .header-actions a,
-  .header-actions button:not(.nav-toggle) {
+  .header-actions button {
     display: none !important;
   }
 
