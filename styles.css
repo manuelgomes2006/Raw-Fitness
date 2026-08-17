@@ -1563,16 +1563,49 @@ select.input-field option {
 }
 
 @media (max-width: 960px) {
-  .header-nav { display: none; }
-  .nav-toggle { display: flex; }
+  .header-nav { display: none !important; }
+  .nav-toggle {
+    display: flex !important;
+    order: 1 !important;
+    font-size: 1.65rem !important;
+    color: #ffffff !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
   .mobile-action-bar { display: flex; }
   body { padding-bottom: 60px; }
   .footer-grid { grid-template-columns: 1fr; }
 
   .header-container {
+    display: grid !important;
+    grid-template-columns: auto 1fr auto !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .logo-centered {
+    order: 2 !important;
+    justify-self: center !important;
+    margin: 0 auto !important;
+    font-size: 1.45rem !important;
+  }
+
+  .logo-centered .logo-img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .header-actions {
+    order: 3 !important;
+    justify-self: end !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    gap: 6px !important;
+  }
+
+  .btn-call-header {
+    display: none !important;
   }
 
   /* Mobile Hero Container Spacing (Removing Excessive Space) */
