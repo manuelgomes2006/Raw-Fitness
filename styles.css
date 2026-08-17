@@ -1588,12 +1588,17 @@ select.input-field option {
     order: 2 !important;
     justify-self: center !important;
     margin: 0 auto !important;
-    font-size: 1.45rem !important;
+    font-size: 1.25rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .logo-centered span {
+    display: none !important;
   }
 
   .logo-centered .logo-img {
-    width: 34px !important;
-    height: 34px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
 
   .header-actions {
@@ -1602,6 +1607,14 @@ select.input-field option {
     display: flex !important;
     align-items: center !important;
     gap: 6px !important;
+  }
+
+  .header-actions .btn {
+    padding: 6px 12px !important;
+    font-size: 0.7rem !important;
+    border-radius: 9999px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
   }
 
   .btn-call-header {
